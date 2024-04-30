@@ -53,10 +53,10 @@ void actualizar(char jugada){
     char simbolo;
     if (turno % 2 == 0){
         //jugador 1
-        simbolo = 'X';
+        simbolo = simbolo_jugador1;
     }else{
         //jugador 2
-        simbolo = 'O';
+        simbolo = simbolo_jugador2;
     }
     // Actualizar el tablero con la jugada
     for (int i = 0; i < 3; i++){
@@ -122,9 +122,10 @@ void verGanador(){
 }
 // Elejir simbolo para el jugador
 void elegir_simbolo() {
-    cout << "\nJugador 1, elija el simbolo con el que desea jugar:\n";
+    cout << "\nJugador 1, elija el simbolo con el que desea jugar\n";
     cout << "1. 0\n";
     cout << "2. X\n";
+    cout << "\nIngrese su opcion: ";
     int opcion;
     cin >> opcion;
     if (opcion == 1) {
