@@ -146,7 +146,7 @@ if(inicio){
   turno = 0 + rand() % 2; // La primera vez que se inicia el juego indicara quien sera el primero en jugar
   inicio = false; // Indica que no es la primera vez que se juega
 }
-char neuvo_tablero[3][3] = {{'1', '2', '3'},
+char nuevo_tablero[3][3] = {{'1', '2', '3'},
                       {'4', '5', '6'},
                       {'7', '8', '9'}};
 
